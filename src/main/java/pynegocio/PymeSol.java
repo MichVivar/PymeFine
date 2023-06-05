@@ -2,23 +2,14 @@ package pynegocio;
 
 import java.io.IOException;
 import java.time.Duration;
-import java.util.Scanner;
 
-import org.apache.xmlbeans.impl.xb.xsdschema.FieldDocument.Field.Xpath;
-import org.openqa.selenium.By;
 import static org.openqa.selenium.By.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Select;
-
 import org.openqa.selenium.support.ui.Wait;
-import java.io.File;
 
-import com.fasterxml.jackson.annotation.JsonTypeInfo.Id;
 
 public class PymeSol {
     private static WebDriver driver;
