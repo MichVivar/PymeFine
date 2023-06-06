@@ -50,7 +50,7 @@ public class PymeSol {
             //Comencemos Registro Etapa llenado 
             driver.findElement(By.id("nombre")).sendKeys("Braulio Garza");
             driver.findElement(By.id("nombrecomercial")).sendKeys("Totis");
-            driver.findElement(By.id("montocredito")).sendKeys("30000");            
+            driver.findElement(By.id("montocredito")).sendKeys("3000");            
         }
     }
 
