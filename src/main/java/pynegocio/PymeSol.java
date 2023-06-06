@@ -3,7 +3,7 @@ package pynegocio;
 import java.io.IOException;
 import java.time.Duration;
 
-import static org.openqa.selenium.By.*;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -32,25 +32,25 @@ public class PymeSol {
 
         {
             //Comencemos con tu registro Etapa Error
-            driver.findElement(id("CrearReg")).click();
+            driver.findElement(By.id("CrearReg")).click();
             Thread.sleep(300);
-            driver.findElement(xpath("/html/body/div[2]/div/div[2]"));
-            driver.findElement(xpath("/html/body/div[2]/div/div[3]/button[1]")).click();//Modal
+            driver.findElement(By.xpath("/html/body/div[2]/div/div[2]"));
+            driver.findElement(By.xpath("/html/body/div[2]/div/div[3]/button[1]")).click();//Modal
             Thread.sleep(300);
-            driver.findElement(xpath("/html/body/div/div[1]/div[3]/div/div[2]/div[1]/label[2]"));//Nombre error
-            driver.findElement(xpath("/html/body/div/div[1]/div[3]/div/div[2]/div[2]/label[2]"));//Nombrre empresa error
-            driver.findElement(xpath("/html/body/div/div[1]/div[3]/div/div[3]/div[1]/label[2]"));//Cantidad que necesitas error
-            driver.findElement(xpath("/html/body/div/div[1]/div[3]/div/div[3]/div[2]/label[2]"));//RFC Empresa error           
-            driver.findElement(xpath("/html/body/div/div[1]/div[3]/div/div[4]/div[1]/label[2]"));//Telefono celular error
-            driver.findElement(xpath("/html/body/div/div[1]/div[3]/div/div[4]/div[2]/label[2]"));//Correo error
-            driver.findElement(xpath("/html/body/div/div[1]/div[3]/div/div[5]/div[1]/div/label[2]"));//Pass error
-            driver.findElement(xpath("/html/body/div/div[1]/div[3]/div/div[5]/div[2]/div/label[1]"));//Pass conf error            
+            driver.findElement(By.xpath("/html/body/div/div[1]/div[3]/div/div[2]/div[1]/label[2]"));//Nombre error
+            driver.findElement(By.xpath("/html/body/div/div[1]/div[3]/div/div[2]/div[2]/label[2]"));//Nombrre empresa error
+            driver.findElement(By.xpath("/html/body/div/div[1]/div[3]/div/div[3]/div[1]/label[2]"));//Cantidad que necesitas error
+            driver.findElement(By.xpath("/html/body/div/div[1]/div[3]/div/div[3]/div[2]/label[2]"));//RFC Empresa error           
+            driver.findElement(By.xpath("/html/body/div/div[1]/div[3]/div/div[4]/div[1]/label[2]"));//Telefono celular error
+            driver.findElement(By.xpath("/html/body/div/div[1]/div[3]/div/div[4]/div[2]/label[2]"));//Correo error
+            driver.findElement(By.xpath("/html/body/div/div[1]/div[3]/div/div[5]/div[1]/div/label[2]"));//Pass error
+            driver.findElement(By.xpath("/html/body/div/div[1]/div[3]/div/div[5]/div[2]/div/label[1]"));//Pass conf error            
         }
         {
             //Comencemos Registro Etapa llenado 
-            driver.findElement(id("nombre")).sendKeys("Braulio Garza");
-            driver.findElement(id("nombrecomercial")).sendKeys("Totis");
-            driver.findElement(id("montocredito")).sendKeys("30000");            
+            driver.findElement(By.id("nombre")).sendKeys("Braulio Garza");
+            driver.findElement(By.id("nombrecomercial")).sendKeys("Totis");
+            driver.findElement(By.id("montocredito")).sendKeys("30000");            
         }
     }
 
